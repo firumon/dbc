@@ -29,6 +29,9 @@ class DigitalBusinessCardServiceProvider extends ServiceProvider
         } else {
             $this->loadRoutesFrom($this->path('routes','web.php'));
             $this->loadViewsFrom($this->path('resources/views'),'dbc');
+            $this->publishes([
+                $this->path('public') => public_path(),
+            ], 'assets');
         }
     }
 

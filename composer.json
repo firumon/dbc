@@ -17,5 +17,12 @@
             "email": "github@firumon.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+	"extra": {
+    "laravel": {
+        "providers": [
+            "Firumon\\DigitalBusinessCard\\DigitalBusinessCardServiceProvider"
+        ]
+    }
+},
 }
