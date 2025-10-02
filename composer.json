@@ -2,8 +2,7 @@
     "name": "firumon/digital-business-card",
     "type": "laravel-package",
     "require": {
-        "php": "^8.2",
-        "laravel/laravel": "^v12.5.0"
+        "php": "^8.2"
     },
     "license": "MIT",
     "autoload": {
