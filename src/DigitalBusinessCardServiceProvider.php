@@ -2,6 +2,7 @@
 
 namespace Firumon\DigitalBusinessCard;
 
+use Firumon\DigitalBusinessCard\Models\User;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 
@@ -12,10 +13,10 @@ class DigitalBusinessCardServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->mergeConfigFrom($this->path('config','session.php'),'session');
-        $this->mergeConfigFrom($this->path('config','cache.php'),'cache');
-        $this->mergeConfigFrom($this->path('config','database.php'),'database');
         $this->mergeConfigFrom($this->path('config','dbc.php'),'dbc');
+        config(['session.driver' => 'file','cache.default' => 'file','database.default' => 'mysql']);
+        config(['database.connections.mysql.engine' => 'MyISAM']);
+        config(['auth.providers.users.model' => User::class]);
     }
 
     /**
@@ -26,12 +27,12 @@ class DigitalBusinessCardServiceProvider extends ServiceProvider
         if($this->app->runningInConsole()){
             $this->loadMigrationsFrom($this->path('database/migrations'));
             Schema::defaultStringLength(191);
+            $this->publishes([
+                $this->path('public') => public_path(),
+            ], 'laravel-assets');
         } else {
             $this->loadRoutesFrom($this->path('routes','web.php'));
             $this->loadViewsFrom($this->path('resources/views'),'dbc');
-            $this->publishes([
-                $this->path('public') => public_path(),
-            ], 'assets');
         }
     }
 
