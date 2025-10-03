@@ -20,7 +20,7 @@
     <script src="{{ env('APP_URL') }}/script/VCardProperty.js"></script>
     @auth()<script src="{{ env('APP_URL') }}/script/user/{{\Illuminate\Support\Facades\Auth::id()}}/data.js"></script>
     @endauth<script>@stack('script_content')</script>
-    <script type="module" crossorigin src="{{ env('APP_URL') }}/assets/index-CVIMlvYm.js"></script>
+    <script type="module" crossorigin src="{{ env('APP_URL') }}/assets/index-D3MJetay.js"></script>
     <link rel="stylesheet" crossorigin href="{{ env('APP_URL') }}/assets/index-Rh9i0xHL.css">
 </head>
 <body>
