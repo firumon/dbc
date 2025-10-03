@@ -1,0 +1,1 @@
+import{Q as r}from"./QPage-RsarDNA8.js";import{_ as t}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{a as o,o as a,w as s,f}from"./index-DPf0em9p.js";import"./render-BBT-_xwK.js";const c={};function n(m,e){return a(),o(r,{class:"flex flex-center"},{default:s(()=>[...e[0]||(e[0]=[f(" MANAGER ",-1)])]),_:1})}const x=t(c,[["render",n]]);export{x as default};
