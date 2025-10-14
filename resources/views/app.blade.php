@@ -37,7 +37,7 @@
 @endpushif
 @pushif(($BrandPrimary || $BrandSecondary || $ColorPrimary || $ColorSecondary),'link')
 
-    <style> html:root { @if($BrandPrimary)--q-primary:{{ $BrandPrimary }}; @endif @if($BrandSecondary)--q-secondary:{{ $BrandSecondary }}; @endif }  @if($ColorPrimary).bg-primary{ color:{{ $ColorPrimary }}; } @endif @if($ColorSecondary).bg-secondary{ color:{{ $ColorSecondary }}; } @endif </style>
+    <style> html:root { @if($BrandPrimary)--q-primary:{{ $BrandPrimary }}; @endif @if($BrandSecondary)--q-secondary:{{ $BrandSecondary }}; @endif }  @if($ColorPrimary).bg-primary{ color:{{ $ColorPrimary }}; } .color_primary{ color:{{ $ColorPrimary }}; } @endif @if($ColorSecondary).bg-secondary{ color:{{ $ColorSecondary }}; } .color_secondary{ color:{{ $ColorSecondary }}; } @endif </style>
 @endpushif
 @push('append_body')
     <script type="module" src="/.quasar/dev-spa/client-entry.js"></script>
