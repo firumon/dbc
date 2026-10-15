@@ -1,0 +1,1 @@
+import{Q as e}from"./QPage-C48DvDPL.js";import{_ as r}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{a as o,o as a,w as s,f}from"./index-zEYeXcr0.js";import"./render-b9muO1MM.js";const c={};function n(i,t){return a(),o(e,{class:"flex flex-center"},{default:s(()=>[...t[0]||(t[0]=[f(" ADMIN ",-1)])]),_:1})}const x=r(c,[["render",n]]);export{x as default};

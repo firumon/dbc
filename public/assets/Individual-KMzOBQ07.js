@@ -1,0 +1,1 @@
+import{Q as t}from"./QPage-C48DvDPL.js";import{_ as r}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{a as o,o as a,w as s,f}from"./index-zEYeXcr0.js";import"./render-b9muO1MM.js";const c={};function n(i,e){return a(),o(t,{class:"flex flex-center"},{default:s(()=>[...e[0]||(e[0]=[f(" INDIVIDUAL ",-1)])]),_:1})}const p=r(c,[["render",n]]);export{p as default};
